@@ -1,14 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-</head>
-<body>
-    <h1>Contact Us</h1>
-    <p>For inquiries, please reach out to <a href="mailto:brightmindsempower@gmail.com">Bright Minds</a>.</p>
-    <button onclick="sendEmail('brightmindsempower@gmail.com')">Send Email Enquiry</button>
-    <button onclick="offerEmail('brightmindsempower@gmail.com')">Send Email Offer</button>
+<body style="margin:0;background:#05060a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#f6f7fb;-webkit-font-smoothing:antialiased;">
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+  <!-- HEADER -->
+  <div style="border-bottom:1px solid #232633;background:#05060a;">
+    <div style="max-width:960px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;border:1px solid #232633;background:#05060a;font-size:13px;">
+          <span style="width:8px;height:8px;border-radius:50%;background:#30d087;box-shadow:0 0 10px #30d087;"></span>
+          <span>TILL.CO.NZ</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;font-size:13px;color:#a3aac2;flex-wrap:wrap;">
+        <a href="#about" style="text-decoration:none;color:inherit;">Overview</a>
+        <a href="#ideas" style="text-decoration:none;color:inherit;">Brand ideas</a>
+        <a href="#faq" style="text-decoration:none;color:inherit;">FAQ</a>
+        <a href="#contact" style="text-decoration:none;color:inherit;">Enquiries</a>
+      </div>
+      <div>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+          style="border-radius:999px;border:none;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;letter-spacing:0.03em;text-transform:uppercase;background:linear-gradient(135deg,#30d087,#00b56e);color:#02040a;box-shadow:0 0 18px rgba(8,255,170,0.5);">
+          <span>Make an offer</span>
+          <span style="font-size:16px;margin-top:-1px;">↗</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div style="flex:1;">
+
+    <!-- HERO -->
+    <div id="top" style="max-width:960px;margin:0 auto;padding:32px 20px 24px;display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start;">
+      <div style="flex:1 1 260px;min-width:260px;max-width:520px;">
+        <div style="display:inline-flex;gap:8px;align-items:center;padding:4px 10px;border-radius:999px;background:rgba(48,208,135,0.12);border:1px solid rgba(48,208,135,0.25);color:#9ef4c9;font-size:12px;margin-bottom:14px;">
+          <span style="width:6px;height:6px;border-radius:50%;background:#30d087;box-shadow:0 0 8px #30d087;"></span>
+          <span>Premium .CO.NZ domain now available</span>
+        </div>
+        <h1 style="font-size:32px;margin:0 0 10px;letter-spacing:-0.03em;line-height:1.1;">
+          <span style="background:linear-gradient(90deg,#ffffff,#a1ffe0);-webkit-background-clip:text;color:transparent;">TILL.CO.NZ</span><br />
+          Built for payments, POS &amp; modern retail.
+        </h1>
+        <p style="margin:0 0 18px;color:#a3aac2;font-size:15px;line-height:1.6;max-width:36rem;">
+          A short, memorable and on-brand domain for <strong>POS software</strong>, <strong>payment platforms</strong>,
+          <strong>retail SaaS</strong>, or any product that lives at the checkout. Own the name that literally means
+          “where the money happens”.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;">
+          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+            style="border-radius:999px;border:none;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;letter-spacing:0.03em;text-transform:uppercase;background:linear-gradient(135deg,#30d087,#00b56e);color:#02040a;box-shadow:0 0 18px rgba(8,255,170,0.5);">
+            <span>Submit an offer</span>
+            <span style="font-size:16px;margin-top:-1px;">✉</span>
+          </button>
+          <a href="#about" style="text-decoration:none;">
+            <button
+              style="border-radius:999px;border:1px solid #232633;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;letter-spacing:0.03em;text-transform:uppercase;background:transparent;color:#f6f7fb;">
+              Why this domain?
+            </button>
+          </a>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:#a3aac2;">
+          <span style="display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:999px;background:#151827;border:1px solid #232633;">
+            <strong>.co.nz</strong> namespace
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:999px;background:#151827;border:1px solid #232633;">
+            Single, common English word
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:999px;background:#151827;border:1px solid #232633;">
+            Perfect for POS, payments &amp; fintech
+          </span>
+        </div>
+      </div>
+
+      <!-- Right card -->
+      <div style="flex:1 1 220px;min-width:240px;max-width:360px;">
+        <div style="border-radius:18px;background:radial-gradient(circle at top right,rgba(48,208,135,0.25),rgba(3,5,12,0.96));border:1px solid rgba(48,208,135,0.25);padding:20px 18px;box-shadow:0 22px 50px rgba(21,255,164,0.08);">
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.16em;color:rgba(246,247,251,0.8);margin-bottom:8px;">
+            Domain snapshot
+          </div>
+          <div style="font-size:20px;font-weight:700;letter-spacing:0.08em;margin-bottom:14px;">
+            <span style="background:linear-gradient(90deg,#ffffff,#c6ffe6);-webkit-background-clip:text;color:transparent;">TILL.CO.NZ</span>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;font-size:12px;margin-bottom:16px;">
+            <div style="padding:8px 9px;border-radius:10px;background:rgba(3,5,12,0.7);border:1px solid rgba(120,255,195,0.18);">
+              <span style="display:block;text-transform:uppercase;letter-spacing:0.14em;font-size:10px;color:rgba(223,255,240,0.8);margin-bottom:3px;">Category</span>
+              <strong>POS · Payments · Retail</strong>
+            </div>
+            <div style="padding:8px 9px;border-radius:10px;background:rgba(3,5,12,0.7);border:1px solid rgba(120,255,195,0.18);">
+              <span style="display:block;text-transform:uppercase;letter-spacing:0.14em;font-size:10px;color:rgba(223,255,240,0.8);margin-bottom:3px;">Length</span>
+              <strong>4 letters</strong>
+            </div>
+            <div style="padding:8px 9px;border-radius:10px;background:rgba(3,5,12,0.7);border:1px solid rgba(120,255,195,0.18);">
+              <span style="display:block;text-transform:uppercase;letter-spacing:0.14em;font-size:10px;color:rgba(223,255,240,0.8);margin-bottom:3px;">Keywords</span>
+              <strong>till, pay, checkout</strong>
+            </div>
+            <div style="padding:8px 9px;border-radius:10px;background:rgba(3,5,12,0.7);border:1px solid rgba(120,255,195,0.18);">
+              <span style="display:block;text-transform:uppercase;letter-spacing:0.14em;font-size:10px;color:rgba(223,255,240,0.8);margin-bottom:3px;">Market</span>
+              <strong>NZ business &amp; global</strong>
+            </div>
+          </div>
+
+          <div style="font-size:11px;color:rgba(225,255,242,0.9);border-radius:999px;padding:6px 9px;background:rgba(3,5,12,0.85);border:1px dashed rgba(120,255,195,0.5);display:inline-flex;align-items:center;gap:7px;">
+            <span style="width:6px;height:6px;border-radius:50%;background:#30d087;"></span>
+            <span><strong>Domain only</strong> – no business, codebase or customer data included.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div id="about" style="max-width:960px;margin:0 auto;padding:10px 20px 24px;">
+      <h2 style="font-size:20px;margin:0 0 4px;letter-spacing:-0.02em;">Why TILL.CO.NZ works so well</h2>
+      <p style="margin:0 0 18px;font-size:14px;color:#a3aac2;max-width:38rem;line-height:1.6;">
+        “Till” is already the word people use for the place where money changes hands. Matching that mental shortcut
+        with a clean, four-letter domain creates a powerful anchor for any product that lives around payments,
+        checkout flows, or retail-facing technology.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px;font-size:12px;color:#a3aac2;">
+        <span style="padding:6px 10px;border-radius:999px;background:#151827;border:1px solid #232633;">✔ Ultra-short &amp; easy to pronounce</span>
+        <span style="padding:6px 10px;border-radius:999px;background:#151827;border:1px solid #232633;">✔ Directly tied to paying &amp; checkout</span>
+        <span style="padding:6px 10px;border-radius:999px;background:#151827;border:1px solid #232633;">✔ Trusted .CO.NZ extension</span>
+        <span style="padding:6px 10px;border-radius:999px;background:#151827;border:1px solid #232633;">✔ Works for both B2B and B2C</span>
+      </div>
+    </div>
+
+    <!-- USE CASES -->
+    <div style="max-width:960px;margin:0 auto;padding:0 20px 24px;">
+      <div style="display:inline-flex;align-items:center;gap:6px;font-size:11px;padding:3px 8px;border-radius:999px;background:rgba(255,255,255,0.04);border:1px solid #232633;color:#a3aac2;text-transform:uppercase;margin-bottom:4px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:#30d087;"></span>
+        <span>Potential use cases</span>
+      </div>
+      <h2 style="font-size:20px;margin:0 0 4px;letter-spacing:-0.02em;">Built for payment &amp; retail products</h2>
+      <p style="margin:0 0 16px;font-size:14px;color:#a3aac2;max-width:38rem;line-height:1.6;">
+        Whether you’re launching something new or rebranding an existing solution, TILL.CO.NZ can credibly sit across a
+        wide range of products in the checkout space.
+      </p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+        <div style="background:#10131f;border-radius:14px;padding:14px 12px;border:1px solid #232633;font-size:13px;">
+          <h3 style="font-size:15px;margin:0 0 6px;">Cloud POS platform</h3>
+          <p style="margin:0;color:#a3aac2;line-height:1.6;">
+            Modern POS and inventory software for cafes, bars, retailers, and pop-up stores. “Run your business from the
+            till up”.
+          </p>
+        </div>
+        <div style="background:#10131f;border-radius:14px;padding:14px 12px;border:1px solid #232633;font-size:13px;">
+          <h3 style="font-size:15px;margin:0 0 6px;">Payment gateway / PayFac</h3>
+          <p style="margin:0;color:#a3aac2;line-height:1.6;">
+            A simple name for a complex stack – merchant accounts, card processing, tap-to-pay and online checkouts all
+            under the TILL badge.
+          </p>
+        </div>
+        <div style="background:#10131f;border-radius:14px;padding:14px 12px;border:1px solid #232633;font-size:13px;">
+          <h3 style="font-size:15px;margin:0 0 6px;">Retail analytics</h3>
+          <p style="margin:0;color:#a3aac2;line-height:1.6;">
+            A data product that connects to existing tills and surfaces revenue, margins and footfall insights from the
+            checkout outwards.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRAND IDEAS -->
+    <div id="ideas" style="max-width:960px;margin:0 auto;padding:0 20px 24px;">
+      <h2 style="font-size:20px;margin:0 0 4px;letter-spacing:-0.02em;">Brand directions this domain unlocks</h2>
+      <p style="margin:0 0 12px;font-size:14px;color:#a3aac2;max-width:38rem;line-height:1.6;">
+        You’re not buying a finished brand – you’re buying the <strong>name</strong> that can sit at the centre of many
+        different stories. Here are a few starting points to spark ideas.
+      </p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;font-size:13px;">
+        <div style="background:#10131f;border-radius:10px;padding:9px 10px;border:1px dashed #232633;">
+          <strong>Till</strong>
+          <span>Ultra-clean, one-word master brand. “Till” as the umbrella for an ecosystem of retail tools.</span>
+        </div>
+        <div style="background:#10131f;border-radius:10px;padding:9px 10px;border:1px dashed #232633;">
+          <strong>TillPay</strong>
+          <span>Focused on payments and terminals. Simple positioning for merchant services and card acceptance.</span>
+        </div>
+        <div style="background:#10131f;border-radius:10px;padding:9px 10px;border:1px dashed #232633;">
+          <strong>Tap the Till</strong>
+          <span>A playful angle for tap-to-pay products, hospitality campaigns, or loyalty-driven offers.</span>
+        </div>
+        <div style="background:#10131f;border-radius:10px;padding:9px 10px;border:1px dashed #232633;">
+          <strong>TillCloud</strong>
+          <span>Cloud-first POS or “store OS” for multi-site retailers, with TILL.CO.NZ as the flagship domain.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div id="faq" style="max-width:960px;margin:0 auto;padding:0 20px 24px;">
+      <h2 style="font-size:20px;margin:0 0 4px;letter-spacing:-0.02em;">Acquisition details &amp; FAQ</h2>
+      <p style="margin:0 0 12px;font-size:14px;color:#a3aac2;max-width:38rem;line-height:1.6;">
+        TILL.CO.NZ is being sold as a <strong>domain only</strong>. There is no operating business, codebase, customer
+        database or IP bundled with the sale unless agreed separately.
+      </p>
+
+      <div style="display:grid;gap:10px;font-size:13px;">
+        <div style="background:#10131f;border-radius:12px;padding:10px 11px;border:1px solid #232633;">
+          <strong style="display:block;margin-bottom:4px;">What exactly is included?</strong>
+          <span>
+            The sale is for the <strong>TILL.CO.NZ</strong> domain name registration only. Any existing concepts,
+            mockups or side projects related to the domain are not automatically included, but can be discussed as a
+            separate arrangement if they’re useful to you.
+          </span>
+        </div>
+        <div style="background:#10131f;border-radius:12px;padding:10px 11px;border:1px solid #232633;">
+          <strong style="display:block;margin-bottom:4px;">How does the transfer work?</strong>
+          <span>
+            For .CO.NZ domains, transfer is handled via your chosen NZ domain registrar. Once we have a signed
+            agreement and cleared payment, the UDAI / transfer code will be provided so you can move the domain into
+            your own account.
+          </span>
+        </div>
+        <div style="background:#10131f;border-radius:12px;padding:10px 11px;border:1px solid #232633;">
+          <strong style="display:block;margin-bottom:4px;">Is there a fixed price?</strong>
+          <span>
+            At this stage we are <strong>inviting serious offers</strong>. If you prefer, a buy-it-now price can be
+            agreed to simplify the process.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" style="max-width:960px;margin:0 auto;padding:0 20px 32px;">
+      <div style="border-radius:16px;padding:16px 14px;background:radial-gradient(circle at top left,rgba(48,208,135,0.18),rgba(11,13,20,0.95));border:1px solid rgba(48,208,135,0.25);display:flex;flex-wrap:wrap;gap:18px;">
+        <div style="flex:2 1 260px;min-width:260px;">
+          <h2 style="font-size:20px;margin:0 0 6px;letter-spacing:-0.02em;">Ready to talk numbers?</h2>
+          <p style="margin:0 0 6px;font-size:14px;line-height:1.6;">
+            To express interest, request a guide price, or submit an offer for <strong>TILL.CO.NZ</strong>, get in touch
+            using the details here. Genuine, business-focused enquiries only please.
+          </p>
+          <p style="margin:6px 0 0;font-size:11px;color:rgba(220,245,255,0.8);">
+            If you already have a registrar account (e.g. 1st Domains, Freeparking, Crazy Domains, Namecheap etc.)
+            mention it in your message so transfer steps are quick to confirm.
+          </p>
+        </div>
+        <div style="flex:1.6 1 220px;min-width:230px;font-size:13px;color:#e1fff7;">
+          <p style="margin:0 0 4px;"><strong>Contact email</strong></p>
+          <p style="margin:0 0 10px;">
+            <a href="mailto:brightmindsempower@gmail.com" style="font-family:inherit;background:rgba(3,5,12,0.9);padding:4px 6px;border-radius:6px;border:1px solid rgba(120,255,195,0.4);font-size:12px;color:inherit;text-decoration:none;">
+              Bright Minds
+            </a>
+          </p>
+          <p style="margin:0 0 6px;"><strong>Make an offer</strong></p>
+          <p style="margin:0 0 10px;">
+            Click the button below to open a pre-filled email with the key information we need to evaluate your offer.
+          </p>
+          <a
+            href="mailto:brightmindsempower@gmail.com?subject=Enquiring%20about%20TILL.CO.NZ&body=Hi%2C%0A%0AI%27m%20enquiring%20about%20domain%20TILL.CO.NZ.%0A%0AMy%20details%3A%0A%E2%80%A2%20Name%3A%20%0A%E2%80%A2%20Company%3A%20%0A%E2%80%A2%20Registrar%20account%3A%20%0A%E2%80%A2%20Offer%3A%20%0A%0AThanks.%0A"
+            style="text-decoration:none;">
+            <button
+              style="border-radius:999px;border:none;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;letter-spacing:0.03em;text-transform:uppercase;background:linear-gradient(135deg,#30d087,#00b56e);color:#02040a;box-shadow:0 0 18px rgba(8,255,170,0.5);">
+              <span>Email an offer</span>
+              <span style="font-size:16px;margin-top:-1px;">✉</span>
+            </button>
+          </a>
+          <p style="margin:6px 0 0;font-size:11px;color:rgba(220,245,255,0.8);">
+            If you’ve seen this domain listed on Trade Me or another marketplace, you can reference the listing in your
+            email (e.g. “Trade Me listing ID ______”).
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div style="padding:16px 20px 18px;border-top:1px solid #232633;font-size:11px;color:#a3aac2;text-align:center;background:#05060a;">
+    TILL.CO.NZ – premium payments &amp; POS domain. This page is for domain sale enquiries only and does not represent an
+    active financial services business.
+  </div>
+
+</div>
+
 </body>
 </html>
